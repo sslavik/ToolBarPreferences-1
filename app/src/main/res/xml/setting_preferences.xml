@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:fragment="com.javieramado.toolbarpreferences.AccountFragment"
+        android:title="@string/title_account" android:summary="@string/summary_account"/>
+
+    <PreferenceCategory android:title="@string/title_category_notification">
+        <SwitchPreference
+            android:key="@string/key_notification"
+            android:defaultValue="true"
+            android:title="@string/title_notification"
+            android:summary="@string/summary_notification">
+
+        </SwitchPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

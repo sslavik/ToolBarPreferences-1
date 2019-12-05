@@ -3,6 +3,7 @@ package com.javieramado.toolbarpreferences;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.action_settings:
+                showSettings();
                 return true;
 
             case R.id.action_add:
@@ -39,5 +41,15 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    /**
+     * Carga la ventana de preferencias generales
+     */
+    private void showSettings() {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.content, new SettingFragment());
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }
