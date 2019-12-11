@@ -12,4 +12,11 @@
     <string name="key_password">password</string>
     <string name="title_password">Contraseña</string>
     <string name="summary_password">Ha iniciado sesión</string>
+    <string name="key_ringtone_notification">ringtone_notification</string>
+    <string name="title_ringtone_notification">Tono de notificación</string>
+    <string name="summary_ringtone_notification">notificación de todo de llamada</string>
+    <string name="title_category_help">Ayuda</string>
+    <string name="summary_aboutme">Preguntas frecuentes, contáctanos</string>
+    <string name="title_aboutme">Sobre mí</string>
+    <string name="summary_category_help">Categoría de ayuda</string>
 </resources>

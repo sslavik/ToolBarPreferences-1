@@ -3,7 +3,8 @@
 <EditTextPreference
     android:key="@string/key_user"
     android:title="@string/title_user"
-    android:summary="@string/summary_user"/>
+    android:summary="@string/summary_user"
+    android:selectAllOnFocus="true"/>
     <EditTextPreference
         android:key="@string/key_password"
         android:title="@string/title_password"
