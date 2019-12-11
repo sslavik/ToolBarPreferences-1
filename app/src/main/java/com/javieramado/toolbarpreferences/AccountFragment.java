@@ -31,6 +31,9 @@ public class AccountFragment extends PreferenceFragmentCompat {
         });
     }
 
+    /**
+     * Inicializa la preferencia EditTextPreference Password
+     */
     private void initPreferencePassword() {
         EditTextPreference edpPassword = getPreferenceManager().findPreference(getString(R.string.key_password));
         edpPassword.setOnBindEditTextListener(new EditTextPreference.OnBindEditTextListener() {
